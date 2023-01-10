@@ -57,7 +57,6 @@ MULTISELECTION ,
 	SCRAMBLE,
 	UNDO,
 	REDO,
-	DELETE_GROUP,
 	///TODO: Add more operation types (if needed)
 };
 

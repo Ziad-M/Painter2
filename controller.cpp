@@ -28,7 +28,6 @@
 #include "opStickImage.h"
 #include "opUndo.h"
 #include "opRedo.h"
-#include "DeleteGroup.h"
 //Constructor
 controller::controller()
 {
@@ -103,6 +102,7 @@ operation* controller::createOperation(operationType OpType)
 		case SELECT:
 			pOp = new opSelect(this);
 			break;
+
 		case ROTATE:   //rotate a shape
 			pOp = new opRotate(this);
 			break;
@@ -164,15 +164,12 @@ operation* controller::createOperation(operationType OpType)
 		case UNDO:
 			pOp = new opUndo(this);
 			break;
+
 		case REDO:
 			pOp = new opRedo(this);
 			break;
 		case STATUS:	//a click on the status bar ==> no operation
 			break;
-		case DELETE_GROUP:
-			pOp = new DeleteGroup(this);
-			break;
-
 	}
 
 	return pOp;

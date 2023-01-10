@@ -1,26 +1,23 @@
-#include "Group.h"
+#include "Rotate.h"
 #include "..\controller.h"
-#include "../CMUgraphicsLib/CMUgraphics.h"
 
-opGroup::opGroup(controller* pCont) :operation(pCont)
+opRotate::opRotate(controller* pCont) :operation(pCont)
 {}
-opGroup::~opGroup()
+opRotate::~opRotate()
 {}
 
 //Execute the operation
-void opGroup::Execute()
+void opRotate::Execute()
 {
-
-
-
+	pControl->getGraph()->ROTATE();
 
 }
-void opGroup::Undo()
+void opRotate::Undo()
 {
 	Graph* pGr = pControl->getGraph();
 	pGr->SendFromShapesListToUndo();
 }
-void opGroup::Redo()
+void opRotate::Redo()
 {
 	Graph* pGr = pControl->getGraph();
 	pGr->SendFromUndoToShapesList();

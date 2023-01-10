@@ -35,9 +35,6 @@ public:
 	void Scramble();
 	void StickImage(GUI* pGUI) const;
 	bool isSaved = false;
-	void AddGroupNum(int i);
-	void DeleteGroupNum(int i);
-	void DeleteGroup(int i);
 
 	
 };

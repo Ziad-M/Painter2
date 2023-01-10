@@ -102,10 +102,11 @@ p1 = (rand() % 1000);
 	Corner2.x = temp1 - oo.x + Corner2.x;
 	Corner2.y = temp2 - oo.y + Corner2.y;
 	*/
-	Corner1.x = i -80;
-	Corner1.y = j -40;
-	Corner2.x = i +80;
-	Corner2.y = j +40;
+	Corner1.x = i;
+	Corner1.y = j;
+	Corner2.x = i + 100;
+	Corner2.y = j;
+
 }
 void Ellip::StickImage(GUI* pGUI)
 {

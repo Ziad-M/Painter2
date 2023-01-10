@@ -1,26 +1,25 @@
-#include "Group.h"
+#include "Ungroup.h"
 #include "..\controller.h"
 #include "../CMUgraphicsLib/CMUgraphics.h"
 
-opGroup::opGroup(controller* pCont) :operation(pCont)
+opUngroup::opUngroup(controller* pCont) :operation(pCont)
 {}
-opGroup::~opGroup()
+opUngroup::~opUngroup()
 {}
 
 //Execute the operation
-void opGroup::Execute()
+void opUngroup::Execute()
 {
 
 
 
-
 }
-void opGroup::Undo()
+void opUngroup::Undo()
 {
 	Graph* pGr = pControl->getGraph();
 	pGr->SendFromShapesListToUndo();
 }
-void opGroup::Redo()
+void opUngroup::Redo()
 {
 	Graph* pGr = pControl->getGraph();
 	pGr->SendFromUndoToShapesList();

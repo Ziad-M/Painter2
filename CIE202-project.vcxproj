@@ -129,7 +129,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="controller.cpp" />
-    <ClCompile Include="DeleteGroup.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="operations\Copy.cpp" />
     <ClCompile Include="operations\Exit.cpp" />
@@ -209,7 +208,6 @@
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant2.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jutils.c" />
     <ClCompile Include="GUI\GUI.cpp" />
-    <ClInclude Include="DeleteGroup.h" />
     <ClInclude Include="operations\Copy.h" />
     <ClInclude Include="operations\Exit.h" />
     <ClInclude Include="operations\Group.h" />

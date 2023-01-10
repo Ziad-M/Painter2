@@ -231,9 +231,6 @@
     <ClCompile Include="opRedo.cpp">
       <Filter>Operations</Filter>
     </ClCompile>
-    <ClCompile Include="DeleteGroup.cpp">
-      <Filter>Operations</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMUgraphicsLib\auxil.h">
@@ -419,9 +416,6 @@
       <Filter>Operations</Filter>
     </ClInclude>
     <ClInclude Include="opRedo.h">
-      <Filter>Operations</Filter>
-    </ClInclude>
-    <ClInclude Include="DeleteGroup.h">
       <Filter>Operations</Filter>
     </ClInclude>
   </ItemGroup>

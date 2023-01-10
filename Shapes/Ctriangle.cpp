@@ -94,12 +94,12 @@ void Ctriangle::Scramble(int i, int j)
 	double CenterX = (Corner1.x + Corner2.x + corner3.x) / 3;
 	double CenterY = (Corner1.y + Corner2.y + corner3.y) / 3;
 
-	Corner1.x = i;
-	Corner1.y = j + ((Corner1.y - CenterY) / j) * 50;
-	Corner2.x = i + ((Corner2.x - CenterX) / i) * 50;
-	Corner2.y = j + ((Corner2.y - CenterY) / j) * 50;
-	corner3.x = i + ((corner3.x - CenterX) / i) * 50;
-	corner3.y = j + ((corner3.y - CenterY) / j) * 50;
+	Corner1.x = i + (CenterX + Corner1.x);
+	Corner1.y = j + (CenterY + Corner1.y);
+	Corner2.x = i + (CenterX + Corner2.x);
+	Corner2.y = j + (CenterY + Corner2.y);
+	corner3.x = i + (CenterX + corner3.x);
+	corner3.y = j + (CenterY + corner3.y);
 
 }
 void Ctriangle::StickImage(GUI* pGUI)
